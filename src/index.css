@@ -26,3 +26,8 @@ body,
 .edit:hover {
   background-color: rgb(47, 255, 10) !important;
 }
+
+
+#root>div>div>div>div.react-flow__panel.react-flow__attribution.top.right>a {
+  display: none;
+}
