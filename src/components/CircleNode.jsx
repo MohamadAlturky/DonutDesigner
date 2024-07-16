@@ -1,5 +1,5 @@
-import React, { memo } from 'react';
-import { Handle, useStore, Position } from '@xyflow/react';
+import React, { memo } from "react";
+import { Handle, useStore, Position } from "@xyflow/react";
 
 export default memo(({ id }) => {
   const label = useStore((s) => {
@@ -10,14 +10,14 @@ export default memo(({ id }) => {
     }
 
     return `position x:${parseInt(node.position.x)} y:${parseInt(
-      node.position.y,
+      node.position.y
     )}`;
   });
 
   return (
     <>
       <div className="wrapper gradient">
-        <div className="inner">{label || 'no node connected'}</div>
+        <div className="inner">{label || "no node connected"}</div>
       </div>
       <Handle type="target" position={Position.Left} />
     </>

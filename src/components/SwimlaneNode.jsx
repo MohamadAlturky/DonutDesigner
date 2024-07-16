@@ -23,7 +23,7 @@ function SwimlaneNode({ data, selected }) {
         <div
           style={{
             display: "flex",
-            height: "50px",
+            minWidth: "500px",
             justifyContent: "center",
             alignItems: "center",
             transform: "rotate(-90deg)",
