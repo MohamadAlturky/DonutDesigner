@@ -135,6 +135,41 @@ const OverviewFlow = () => {
     setNodes(_newNodes);
   };
   /////
+
+  document.addEventListener("keyup", (event) => {
+    if (event.key == "q" && event.ctrlKey) {
+      swal({
+        text: "Talk with the Diagram 🤖",
+        content: { element: "textarea" },
+        button: {
+          text: "go",
+        },
+      }).then((name) => {
+        if (!name) {
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 2500,
+            timerProgressBar: true,
+            width: 530,
+            didOpen: (toast) => {
+              toast.addEventListener("mouseenter", Swal.stopTimer);
+              toast.addEventListener("mouseleave", Swal.resumeTimer);
+            },
+          });
+          Toast.fire({
+            icon: "warning",
+            title: "Please Give Me Your Instruction In The Next Time🤖",
+          });
+        } else {
+        }
+      });
+    }
+    console.log(
+      `Key: ${event.key} with ctrlKey ${event.ctrlKey} has been pressed`
+    );
+  });
   return (
     <>
       <button

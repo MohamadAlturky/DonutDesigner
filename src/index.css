@@ -31,3 +31,7 @@ body,
 #root>div>div>div>div.react-flow__panel.react-flow__attribution.top.right>a {
   display: none;
 }
+
+.swal-content__textarea {
+  min-height: 500px !important
+}
