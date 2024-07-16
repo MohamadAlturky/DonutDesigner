@@ -28,6 +28,13 @@ const Sidebar = () => {
       >
         annotation
       </div>
+      <div id="side-bar-link-4-gateway"
+        className="react-flow__node-default"
+        onDragStart={(event: DragEvent) => onDragStart(event, 'gateway')}
+        draggable
+      >
+        gateway
+      </div>
       <div id="side-bar-link-5"
         className="react-flow__node-default"
         onDragStart={(event: DragEvent) => onDragStart(event, 'pool')}
@@ -41,6 +48,13 @@ const Sidebar = () => {
         draggable
       >
         textinput
+      </div>
+      <div id="side-bar-link-15"
+        className="react-flow__node-default"
+        onDragStart={(event: DragEvent) => onDragStart(event, 'activity')}
+        draggable
+      >
+        activity
       </div>
       <div id="side-bar-link-7"
         className="react-flow__node-default"
