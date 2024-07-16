@@ -1,0 +1,28 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.warning {
+  background-color: rgb(227, 32, 32);
+}
+
+.edit {
+  background-color: rgb(64, 238, 33);
+}
+
+.warning:hover {
+  background-color: rgb(243, 17, 17) !important;
+}
+
+.edit:hover {
+  background-color: rgb(47, 255, 10) !important;
+}
