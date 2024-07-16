@@ -1,5 +1,5 @@
 import swal from 'sweetalert';
-export default async function BuildPoolNode(position,type) {
+export default async function BuildPoolNode(position,type,nodes) {
     let title;
     let stayActive = title == "" || title == undefined;
     while (stayActive) {
