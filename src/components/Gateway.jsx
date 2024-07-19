@@ -1,6 +1,6 @@
 import { memo, useState } from "react";
 import { Handle, Position, NodeToolbar } from "@xyflow/react";
-import svg from "../../public/gateway-complex.svg";
+import svg from "/gateway-complex.svg";
 const labelStyle = {
   position: "absolute",
   color: "#555",
