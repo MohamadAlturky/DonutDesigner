@@ -8,7 +8,10 @@
   border-right: 1px solid #eee;
   padding: 15px 10px;
   font-size: 12px;
-  background: #fcfcfc;
+  width: 20%;
+  border-left: 1px solid #eee;
+  overflow-y: scroll;
+  /* min-height: 600px; */
 }
 
 .aside>* {
@@ -26,10 +29,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .aside {
+  /* .aside {
     width: 20%;
     max-width: 180px;
-  }
+  } */
 
   .dndflow {
     flex-direction: row;
@@ -40,3 +43,38 @@
   border: 5px solid #535353 !important;
 }
 
+
+.dash {
+  color-scheme: light;
+  border-width: 0;
+  border-style: solid;
+  box-sizing: border-box;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 42px;
+  text-align: center;
+
+}
+
+
+.dashLink {
+  display: flex;
+  justify-content: start;
+  padding: 3px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px dashed rgb(66, 186, 167);
+  border-left-color: rgb(66, 186, 167);
+  border-left-style: solid;
+  border-left-width: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  background: #f8fafc;
+}
